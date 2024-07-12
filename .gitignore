@@ -1,0 +1,20 @@
+# Arquivos do ambiente virtual (por exemplo, venv, env)
+venv/
+.env
+
+# Arquivos de log e cache
+*.log
+*.cache
+
+# Arquivos de configuração local
+*.ini
+*.cfg
+
+# Outros arquivos gerados pelo sistema
+__pycache__/
+*.pyc
+.DS_Store
+
+# Ignore arquivos gerados pelo poetry
+poetry.lock
+`` , if from to
