@@ -18,3 +18,5 @@ __pycache__/
 # Ignore arquivos gerados pelo poetry
 poetry.lock
 `` , if from to
+
+.env
