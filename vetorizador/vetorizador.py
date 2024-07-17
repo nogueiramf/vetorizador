@@ -4,13 +4,17 @@ from pymongo import MongoClient
 from transformers import AutoTokenizer, AutoModel
 import torch
 import logging
+from dotenv import load_dotenv
+
+# Carregar variáveis de ambiente do arquivo .env
+load_dotenv()
 
 # Configuração de logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Definição da string de conexão do MongoDB
-os.environ["MONGODB_CONNECTION_STRING"] = "mongodb://localhost:27017/"
+os.environ["MONGODB_CONNECTION_STRING"] = os.getenv("MONGODB_CONNECTION_STRING")
 
 # Leitura do documento DOCX
 def read_docx(file_path):
